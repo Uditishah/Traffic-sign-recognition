@@ -3,8 +3,7 @@
 This project implements a new approach for traffic sign recognition, the image pre-processing approach is referenced from the paper ['Traffic sign recognition method for intelligent vehicles'](https://www.researchgate.net/publication/328418844_Traffic_sign_recognition_method_for_intelligent_vehicles), SVM classifiers and MLP classifiers are used to compare the performance.
 ## Proposed Method
 
-<img width="826" alt="Screenshot 2024-07-08 at 11 15 08 PM" src="https://github.com/Uditishah/Traffic-sign-recognition/assets/157534932/afa65a2b-4624-4157-93c2-ebb2a1750271">
-
+<img width="823" alt="Screenshot 2024-07-08 at 11 32 53 PM" src="https://github.com/Uditishah/Traffic-sign-recognition/assets/157534932/06e42cbc-1fb5-4aec-b0d8-2c83701c6042">
 
 The process has three steps. 
 1. Transform the image from the Cartesian coordinate system to the log-polar one with post-processing. 
@@ -19,20 +18,25 @@ The following part we run different experiments to compare different methods. Sp
 1.	Cartesian vs. Log-polar
 
 First, we test the performance of cartesian and log-polar transform on combining features using the SVM classifiers.
-<img width="829" alt="Screenshot 2024-07-08 at 11 19 03 PM" src="https://github.com/Uditishah/Traffic-sign-recognition/assets/157534932/ee46465e-91d6-423d-8580-fe94ced7cbfe">
+<img width="830" alt="Screenshot 2024-07-08 at 11 33 14 PM" src="https://github.com/Uditishah/Traffic-sign-recognition/assets/157534932/2a2791ce-7097-4be4-a446-f6625c744a77">
 
 From the result, we can see that log-polar transform improves the accuracy.
 
 2.	HOG, LBP and Combining features
 
 Then, we make comparison between different feature extraction. The tests are run on SVM classifiers with log-polar transformation step.
-<img width="827" alt="Screenshot 2024-07-08 at 11 20 21 PM" src="https://github.com/Uditishah/Traffic-sign-recognition/assets/157534932/094df57e-c2ee-46f6-97a3-10ae7dc34dc1">
+<img width="818" alt="Screenshot 2024-07-08 at 11 34 22 PM" src="https://github.com/Uditishah/Traffic-sign-recognition/assets/157534932/a9054abb-a7e5-48b2-9cc7-53e1088c620a">
+
+
 From the result, we can see that by combining feature of HOG+LBP, we enhance the performance.
 
 3.	SVM classifier vs. MLP classifier
 
 The following tests are run on combining feature extraction with log-polar transformation.
-<img width="823" alt="Screenshot 2024-07-08 at 11 20 53 PM" src="https://github.com/Uditishah/Traffic-sign-recognition/assets/157534932/349ed715-2868-455d-aea9-a502b2230de0">
+<img width="823" alt="Screenshot 2024-07-08 at 11 35 07 PM" src="https://github.com/Uditishah/Traffic-sign-recognition/assets/157534932/803579e5-0f4c-417b-ada2-be09169da6e1">
+
+
+
 From the results above we can see that, both two classifiers have good performance,
 
 SVM have a better accuracy while MLP is faster in terms of recognition speed as well as the training speed.
